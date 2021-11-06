@@ -155,6 +155,14 @@ td {
 .gridDer {
   grid-area: Derecha; }
 
+iframe {
+  margin: 3rem 0;
+  width: 50%; }
+
+@media only screen and (max-width: 767px) {
+  iframe {
+    width: 95%; } }
+
 /* ============== Botones ============== */
 .botones {
   position: fixed;
@@ -234,48 +242,3 @@ footer {
 
 .btn-3 {
   font-size: 3rem; }
-
-/* ============== BEM ============== 
-
-.header{
-    
-}
-
-.body{
-    
-}
-
-.carouselBem{
-    
-}
-
-.nav{
-    
-}
-
-
-.buttons{
-    
-}
-
-
-.footer {
-    
-    
-}
-
-.gridGaleriaBem {
-    
-    
-}
-
-.divBem{
-    
-    
-}
-
-.divBem__logo{
-    
-    
-} 
-============== BEM ============== */
