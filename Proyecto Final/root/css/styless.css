@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* ============== Paleta de colores básica ============== */
+/* ==============  ==============  ==============  ============== */
+/* ============== Reset ============== */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Assistant', sans-serif; }
+
+body {
+  height: 100%;
+  background-color: #A8B0BF; }
+
+.h2OtroTamaño {
+  font-size: 13pt; }
+
+a {
+  color: #252E40;
+  text-decoration: none; }
+
+h1 {
+  font-size: 40px;
+  margin: 5px;
+  text-align: center;
+  color: #252E40; }
+
+p {
+  text-align: center;
+  color: #252E40; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: #161832; }
+  h1 {
+    font-size: 23px;
+    color: #273144; }
+  h2 {
+    font-size: 19px;
+    color: #273144; }
+  p {
+    color: #7691c7; } }
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: #696F78; }
+  p {
+    color: #bbc6dd; } }
+
+/* ============== Header ==============*/
+.logo {
+  display: flex;
+  margin: 3px;
+  justify-content: center; }
+  .logo img {
+    width: 350px; }
+
+nav {
+  font-size: 20px;
+  padding: 3px;
+  width: 100%;
+  background-color: #252E40;
+  background-image: linear-gradient(to right, #252E40, #A8B0BF);
+  text-align: center;
+  color: #A8B0BF; }
+  nav a {
+    color: #A8B0BF; }
+
+/* ============== Bodies básico ============== */
+main {
+  height: 75vh;
+  text-align: center; }
+
+/* ============== Estilo básico imágenes ============== */
+img {
+  border-radius: 2%; }
+
+/* ============== Index ============== */
+.bio {
+  background-color: #7593CA;
+  text-align: center;
+  width: 50%;
+  margin-top: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 7px; }
+
+@media only screen and (max-width: 767px) {
+  .bio {
+    background-color: #647dac; } }
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto; }
+  .carousel img {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain; }
+
+/* ============== Sobre Mí ============== */
+/* ============== Servicios ============== */
+table {
+  background-color: #7593CA;
+  margin-left: auto;
+  margin-right: auto; }
+  table caption {
+    color: #252E40;
+    letter-spacing: 3px;
+    text-decoration: underline; }
+  table ul {
+    padding: 10px;
+    list-style-type: none; }
+
+.listas {
+  display: flex;
+  list-style-type: none;
+  color: #252E40;
+  justify-content: center; }
+  .listas i {
+    flex-direction: row;
+    margin: 9px;
+    background-color: #40506e; }
+
+td {
+  padding: 10px; }
+
+/* ============== Galería ============== */
+/*-----grid-----*/
+.gridGaleria {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-areas: "titulo    titulo titulo" "Izquierda Centro Derecha";
+  grid-template-rows: 40px 400px;
+  grid-template-columns: repeat(3, 30%); }
+  .gridGaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+    .gridGaleria img:hover {
+      opacity: 0.85;
+      transform: scale(1.02);
+      transition: ease 0.5s; }
+
+.gridTitulo {
+  grid-area: titulo; }
+
+.gridIzq {
+  grid-area: Izquierda; }
+
+.gridCentro {
+  grid-area: Centro; }
+
+.gridDer {
+  grid-area: Derecha; }
+
+/* ============== Botones ============== */
+.botones {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  margin: 10px; }
+
+button a {
+  text-decoration: none;
+  color: #252E40; }
+
+i {
+  font-size: 2em;
+  text-align: center;
+  display: inline-block;
+  padding-top: 3.5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  color: #FFFFFF;
+  /* ============== Esta línea tira Error SASS ============== */
+  /*box-shadow: 2px 2px 2px rgb(0 0 0 / 0.7);*/
+  /* ============== Esta línea tira Error SASS ============== */ }
+
+.irArriba {
+  border-radius: 100%;
+  background-color: #252E40; }
+
+.wsp {
+  border-radius: 100%;
+  background-color: #00bb2d; }
+  .wsp:hover {
+    cursor: pointer; }
+
+/* ============== Footer ============== */
+footer {
+  padding: 5px;
+  height: 30px;
+  text-align: center;
+  background-color: #252E40;
+  background-image: linear-gradient(to right, #A8B0BF, #252E40, #A8B0BF);
+  color: #FFFFFF; }
+
+/* ============== Error ============== */
+.error {
+  margin-top: 10px;
+  text-align: center;
+  height: 700px; }
+
+.textoError {
+  text-align: center;
+  margin-top: 6px;
+  margin-left: auto; }
+
+/* ============== Desafío SASSII Complementario (aplicado a Galería Pruebas) ============== */
+.btn-white {
+  background-color: white; }
+
+.btn-pink {
+  background-color: pink; }
+
+.btn-blue {
+  background-color: blue; }
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  bottom: 30px;
+  left: 10px;
+  margin: 10px; }
+
+.btn-1 {
+  font-size: 1rem; }
+
+.btn-2 {
+  font-size: 2rem; }
+
+.btn-3 {
+  font-size: 3rem; }
+
+/* ============== BEM ============== 
+
+.header{
+    
+}
+
+.body{
+    
+}
+
+.carouselBem{
+    
+}
+
+.nav{
+    
+}
+
+
+.buttons{
+    
+}
+
+
+.footer {
+    
+    
+}
+
+.gridGaleriaBem {
+    
+    
+}
+
+.divBem{
+    
+    
+}
+
+.divBem__logo{
+    
+    
+} 
+============== BEM ============== */
